@@ -1,0 +1,175 @@
+body{
+    overflow-x: hidden;
+}
+
+
+/*       MENU                */
+
+#menu a{
+    font-size: 17px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+/*   CAROUSEL   */
+
+.carousel-item {
+    max-height: 39rem;
+    object-fit: cover;
+}
+
+
+
+.img-t{
+    width: 100%;
+}
+
+.mapa {
+    background: url(./img/image\ 1\ \(1\).png);
+    width: 100%;
+    height: 500px;
+}
+
+#local{
+    background: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid grey;
+    margin-top: 40px;
+    
+}
+
+.wrapper{
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+#numeros-local div {
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+#numeros-local div:not(:last-child){
+    border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child){
+    padding-left: 20px;
+}
+
+#numeros-local p {
+    margin: 0;
+}
+
+#bg-contacto{
+    position: relative;
+    top: -130px;
+}
+
+#seccion-contacto{
+    min-height: 400px;
+    position: relative;
+    background-color: #273036;
+}
+
+.imagen-ultima{
+    background-color:#273036 ;
+}
+
+/* formulario */
+
+#contenedor-formulario{
+    /* top: -200px; */
+    left: 50%;
+    transform: translateY(-150px);
+    background-color: #fbfafa;
+    border-radius: 1rem;
+    max-width: 500px;
+    padding-bottom: 10px;
+}
+
+/* FOOTER  */
+
+footer{
+    background-color:#273036 ;
+    min-height: 100px;
+}
+
+footer p {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos{
+    font-size: 40px;
+    padding: 5 8px;
+    color: #f3f3f3;
+    
+}
+
+/*     
+
+MEDIA QUERI PARA PANTALLA PEQUEÑA
+
+*/
+
+@media (max-width:768px){
+    #intro, #team{
+        width: 90% !important;
+    }
+    .widht100{
+        width: 100% !important;
+    }
+    
+    #desaparecer{
+        display: none;
+    }
+    
+}
+
+
+
+/* 
+
+MEDIA QUERI PARA PANTALLA SUPER PEQUÑA
+
+*/
+
+@media (max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+
+/* 
+
+MEDIA PANTALLA ANCHA
+
+
+*/
+
+@media (max-width:1200px) {
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+    #contenedor-formulario{
+        /* top: -200px; */
+        left: 50%;
+        transform: translateY(-100px);
+        background-color: #fbfafa;
+        border-radius: 1rem;
+        max-width: 500px;
+    }
+    
+}
